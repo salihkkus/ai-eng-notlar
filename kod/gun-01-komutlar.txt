@@ -1,0 +1,127 @@
+salih@Salih:~$ mkdir ~/deneme
+salih@Salih:~$ cd ~/deneme
+salih@Salih:~/deneme$ pwd
+/home/salih/deneme
+salih@Salih:~/deneme$ echo "Merhaba Notlar" > notlar.txt
+salih@Salih:~/deneme$ cat notlar.txt
+Merhaba Notlar
+salih@Salih:~/deneme$ echo 11 merhaba linux "" > notlar.txt
+salih@Salih:~/deneme$ cat notlar.txt
+11 merhaba linux
+salih@Salih:~/deneme$ echo " Hello Linux" >> notlar.txt
+salih@Salih:~/deneme$ cat notlar.txt
+11 merhaba linux
+ Hello Linux
+salih@Salih:~/deneme$ echo "Linux" liste.txt
+Linux liste.txt
+salih@Salih:~/deneme$ echo "Linux" > liste.txt
+salih@Salih:~/deneme$ cat liste.txt
+Linux
+salih@Salih:~/deneme$ echo "Ubunutu" >> liste.txt
+salih@Salih:~/deneme$ cat liste.txt
+Linux
+Ubunutu
+salih@Salih:~/deneme$ echo "Ubuntu" >> liste.txt
+echo "Linux terminal" >> liste.txt
+echo "Docker" >> liste.txt
+echo "Linux kernel" >> liste.txt
+echo "Git" >> liste.txt
+echo "Python programlama" >> liste.txt
+echo "Linux WSL" >> liste.txt
+echo "Claude Code" >> liste.txt
+salih@Salih:~/deneme$ cat liste.txt
+Linux
+Ubunutu
+Ubuntu
+Linux terminal
+Docker
+Linux kernel
+Git
+Python programlama
+Linux WSL
+Claude Code
+salih@Salih:~/deneme$ grep "Linux" liste.txt
+Linux
+Linux terminal
+Linux kernel
+Linux WSL
+salih@Salih:~/deneme$ cat liste.txt | grep "Linux" | wc -l
+4
+salih@Salih:~/deneme$ ls -la
+total 16
+drwxr-xr-x 2 salih salih 4096 Oct 30 16:47 .
+drwxr-x--- 5 salih salih 4096 Oct 30 15:56 ..
+-rw-r--r-- 1 salih salih  101 Oct 30 16:48 liste.txt
+-rw-r--r-- 1 salih salih   31 Oct 30 16:39 notlar.txt
+salih@Salih:~/deneme$ nano merhaba.sh
+salih@Salih:~/deneme$ ls -l merhaba.sh
+-rw-r--r-- 1 salih salih 49 Oct 30 16:53 merhaba.sh
+salih@Salih:~/deneme$ chmod +x merhaba.sh
+salih@Salih:~/deneme$ ./merhaba.sh
+Linuxla uğraşmak sıkıcı fazlasıyla
+salih@Salih:~/deneme$ chmod -x merhaba.sh
+salih@Salih:~/deneme$ ./merhaba.sh
+-bash: ./merhaba.sh: Permission denied
+salih@Salih:~/deneme$ chmod +x merhaba.sh
+salih@Salih:~/deneme$ history > gun-01-komutlar.txt
+salih@Salih:~/deneme$ cat gun-01-komutlar.txt
+    1  sudo apt update && sudo apt upgrade -y
+    2  git --version
+    3  sdo apt install -y build-essential curl wget git unzip
+    4  sudo apt install -y build-essential curl wget git unzip
+    5  sudo apt install -y python3 python3-pip python3-venv
+    6  mkdir ~/deneme
+    7  cd ~/deneme
+    8  pwd
+    9  echo "Merhaba Notlar" > notlar.txt
+   10  cat notlar.txt
+   11  echo 11 merhaba linux "" > notlar.txt
+   12  cat notlar.txt
+   13  echo " Hello Linux" >> notlar.txt
+   14  cat notlar.txt
+   15  echo "Linux" liste.txt
+   16  echo "Linux" > liste.txt
+   17  cat liste.txt
+   18  echo "Ubunutu" >> liste.txt
+   19  cat liste.txt
+   20  echo "Ubuntu" >> liste.txt
+   21  echo "Linux terminal" >> liste.txt
+   22  echo "Docker" >> liste.txt
+   23  echo "Linux kernel" >> liste.txt
+   24  echo "Git" >> liste.txt
+   25  echo "Python programlama" >> liste.txt
+   26  echo "Linux WSL" >> liste.txt
+   27  echo "Claude Code" >> liste.txt
+   28  cat liste.txt
+   29  grep "Linux" liste.txt
+   30  cat liste.txt | grep "Linux" | wc -l
+   31  ls -la
+   32  nano merhaba.sh
+   33  ls -l merhaba.sh
+   34  chmod +x merhaba.sh
+   35  ./merhaba.sh
+   36  chmod -x merhaba.sh
+   37  ./merhaba.sh
+   38  chmod +x merhaba.sh
+   39  history > gun-01-komutlar.txt
+salih@Salih:~/deneme$ ls -la
+total 24
+drwxr-xr-x 2 salih salih 4096 Oct 30 16:55 .
+drwxr-x--- 6 salih salih 4096 Oct 30 16:52 ..
+-rw-r--r-- 1 salih salih 1254 Oct 30 16:55 gun-01-komutlar.txt
+-rw-r--r-- 1 salih salih  101 Oct 30 16:48 liste.txt
+-rwxr-xr-x 1 salih salih   49 Oct 30 16:53 merhaba.sh
+-rw-r--r-- 1 salih salih   31 Oct 30 16:39 notlar.txt
+salih@Salih:~/deneme$ date
+Fri Oct 30 17:14:23 +03 2026
+salih@Salih:~/deneme$ grep "linux" liste.txt
+salih@Salih:~/deneme$ grep -i "linux" liste.txt
+Linux
+Linux terminal
+Linux kernel
+Linux WSL
+salih@Salih:~/deneme$ grep -c "Linux" liste.txt
+4
+salih@Salih:~/deneme$ touch  /etc/deneme.txt
+touch: cannot touch '/etc/deneme.txt': Permission denied
+salih@Salih:~/deneme$
